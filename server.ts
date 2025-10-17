@@ -21,7 +21,7 @@ const corsOptions = {
       'http://localhost:8081',
       'http://localhost:5173', // Vite default port
       'http://localhost:3000', // Common development port
-      'https://tnaar-healthcare.vercel.app/', // Vercel deployment
+      'https://tnaar-healthcare-frontend.vercel.app/', // Vercel deployment
       // Add your production domain here
       process.env.FRONTEND_URL || '' // For deployment environments
     ];
