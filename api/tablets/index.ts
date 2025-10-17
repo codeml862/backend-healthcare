@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import { getTabletsHandler, createTabletHandler } from '../../integrations/api/tablets.ts';
-import { prisma } from '../../prismaClient.ts';
+import { getTabletsHandler, createTabletHandler } from '../../integrations/api/tablets';
+import { prisma } from '../../prismaClient';
 
 // Check if DATABASE_URL is set
 if (!process.env.DATABASE_URL) {
