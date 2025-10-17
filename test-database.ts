@@ -1,4 +1,4 @@
-import { prisma } from './server/prismaClient.ts';
+import { prisma } from './prismaClient.ts';
 
 async function testDatabaseConnection() {
   try {
@@ -12,12 +12,12 @@ async function testDatabaseConnection() {
     try {
       const count = await prisma.tablet.count();
       console.log(`✅ Tablet table exists with ${count} records`);
-    } catch (error) {
+    } catch (error: any) {
       console.log('❌ Tablet table error:', error.message);
     }
     
     await prisma.$disconnect();
-  } catch (error) {
+  } catch (error: any) {
     console.error('❌ Database connection failed:', error.message);
   }
 }

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 import { getTabletsHandler, getTabletByIdHandler, createTabletHandler, updateTabletHandler, deleteTabletHandler } from './integrations/api/tablets.ts';
 import prisma from './prismaClient.ts';
 
-const app = express();
+export const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
